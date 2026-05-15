@@ -1,0 +1,250 @@
+export default function Portfolio() {
+  const projects = [
+    {
+      title: "Revival Propensity Stratification using ML",
+      desc: "Built a machine learning revival-scoring pipeline during my internship at SBI Life Insurance using 150+ customer attributes and multiple ensemble models.",
+      tech: ["Python", "XGBoost", "RandomForest", "MiniLM"],
+    },
+    {
+      title: "Course Recommendation System",
+      desc: "Developed a full-stack recommendation platform using clustering-based personalization and dynamic recommendation logic.",
+      tech: ["React", "Node.js", "PostgreSQL", "K-Means"],
+    },
+    {
+      title: "C-Subset Language Compiler",
+      desc: "Built a compiler supporting lexical analysis, parsing, AST generation, TAC generation, and register optimization.",
+      tech: ["C++", "Flex", "Bison", "Compiler Design"],
+    },
+    {
+      title: "Operating Systems Development",
+      desc: "Implemented system calls, multithreading, scheduling, IPC, and shell functionalities in xv6.",
+      tech: ["C", "xv6", "Operating Systems"],
+    },
+    {
+      title: "Audio-Based Network Simulation",
+      desc: "Designed an audio-encoded physical layer protocol with collision detection and network traffic analysis.",
+      tech: ["Python", "PyAudio", "Wireshark", "Scapy"],
+    },
+    {
+      title: "Algorithmic Trading System",
+      desc: "Created a latency-optimized trading engine with arbitrage detection and priority-based order execution.",
+      tech: ["C++", "Data Structures", "Algorithms"],
+    },
+  ];
+
+  const skills = [
+    "C++",
+    "Python",
+    "Java",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Django",
+    "PostgreSQL",
+    "Machine Learning",
+    "PyTorch",
+    "TensorFlow",
+    "Scikit-learn",
+    "Operating Systems",
+    "Computer Networks",
+    "Compiler Design",
+    "Docker",
+    "Git",
+    "Linux",
+  ];
+
+  return (
+    <div className="min-h-screen bg-black text-white px-6 py-10 font-sans">
+      <div className="max-w-6xl mx-auto">
+        {/* Hero Section */}
+        <section className="grid md:grid-cols-2 gap-10 items-center py-12">
+          <div>
+            <p className="text-pink-400 uppercase tracking-[0.3em] text-sm mb-4">
+              Portfolio
+            </p>
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+              Hi, I'm <span className="text-pink-400">Amrutha Rani Kanike</span>
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              Final year Computer Science student at IIT Bombay focused on
+              software engineering, backend systems, machine learning, and
+              scalable application development.
+            </p>
+
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
+                <p className="text-pink-400 text-xl font-bold">IIT Bombay</p>
+                <p className="text-gray-400 text-sm">Computer Science</p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
+                <p className="text-pink-400 text-xl font-bold">2026</p>
+                <p className="text-gray-400 text-sm">Graduation Year</p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
+                <p className="text-pink-400 text-xl font-bold">Software + ML</p>
+                <p className="text-gray-400 text-sm">Engineering Focus</p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
+                <p className="text-pink-400 text-xl font-bold">HackOn</p>
+                <p className="text-gray-400 text-sm">Top 50 Female Coders</p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-2xl text-white font-medium shadow-lg">
+                View Projects
+              </button>
+              <button className="border border-gray-600 hover:border-pink-400 transition px-6 py-3 rounded-2xl text-white font-medium">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative">
+              <div className="w-80 h-80 rounded-[2rem] bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 p-1 shadow-2xl">
+                <div className="w-full h-full rounded-[2rem] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/your-photo.jpg"
+                    alt="Amrutha"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-3 shadow-xl text-center">
+                <p className="text-pink-400 font-semibold">IIT Bombay</p>
+                <p className="text-sm text-gray-400">Computer Science</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section className="py-14">
+          <h2 className="text-3xl font-bold mb-6">About Me</h2>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+              <p className="text-gray-400 text-sm mb-2">Education</p>
+              <h3 className="text-xl font-semibold">IIT Bombay</h3>
+              <p className="text-gray-400 mt-2">B.Tech in Computer Science</p>
+              <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+              <p className="text-gray-400 text-sm mb-2">Interests</p>
+              <h3 className="text-xl font-semibold">Software Engineering</h3>
+              <p className="text-gray-400 mt-2">Backend, Systems, ML</p>
+              <p className="text-gray-500 text-sm mt-1">Full Stack + AI</p>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+              <p className="text-gray-400 text-sm mb-2">Recognition</p>
+              <h3 className="text-xl font-semibold">HackOn Amazon</h3>
+              <p className="text-gray-400 mt-2">Top 50 Female Coders</p>
+              <p className="text-gray-500 text-sm mt-1">National Recognition</p>
+            </div>
+          </div>
+
+          <div className="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 shadow-xl">
+            <p className="text-gray-300 text-lg leading-8">
+              I enjoy building software systems ranging from compilers and operating systems to full-stack web applications and machine learning solutions. My work spans backend engineering, networking, recommendation systems, distributed logic, and performance-focused system design.
+            </p>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section className="py-14">
+          <h2 className="text-3xl font-bold mb-8">Skills</h2>
+          <div className="flex flex-wrap gap-4">
+            {skills.map((skill) => (
+              <div
+                key={skill}
+                className="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-700 hover:border-pink-400 transition"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className="py-14">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-3xl font-bold">Projects</h2>
+            <p className="text-gray-400">Selected Work</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project) => (
+              <div
+                key={project.title}
+                className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 hover:scale-[1.02] transition shadow-xl"
+              >
+                <div className="h-40 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 mb-5 flex items-center justify-center text-5xl">
+                  🚀
+                </div>
+
+                <h3 className="text-2xl font-semibold mb-3">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-400 mb-5 leading-7">
+                  {project.desc}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-sm px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className="py-14">
+          <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-3xl p-10 text-center">
+            <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p className="text-gray-300 mb-8 text-lg">
+              Open to Software Engineering, Backend Development, Systems Engineering, and Machine Learning opportunities.
+            </p>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <a
+                href="mailto:amruthakanike2004@gmail.com"
+                className="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-2xl"
+              >
+                Email Me
+              </a>
+
+              <a
+                href="https://github.com/amrutharani?tab=repositories&q=&type=public&language=&sort="
+                className="border border-zinc-600 hover:border-pink-400 transition px-6 py-3 rounded-2xl"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/amrutharani-kanike-b9878b399/"
+                className="border border-zinc-600 hover:border-pink-400 transition px-6 py-3 rounded-2xl"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
